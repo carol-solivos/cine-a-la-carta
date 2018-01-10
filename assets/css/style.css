@@ -1,0 +1,15 @@
+#trailer 
+{
+    position:absolute;
+}
+
+#posteroficial{
+  float: left;
+  margin-right: 15px;
+}
+
+.feature-set {
+  float: right;
+  width: auto;
+  max-height: 100%;
+}
