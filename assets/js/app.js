@@ -1,5 +1,17 @@
 $(document).ready(() => {
-	/*$('#searchForm').on('submit', (e) => {
+	$(".button-collapse").sideNav();
+  $('.modal').modal();
+  $('.tooltipped').tooltip({delay: 30});
+  $('ul.tabs').tabs('select_tab', 'tab_id');
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  $('.carousel').carousel({
+        dist: -50,
+        padding: 100,
+  });
+
+
+
+  /*$('#searchForm').on('submit', (e) => {
 		let searchText = $('#searchText').val();
 		getMovies(searchText);
 		e.preventDefault();
@@ -41,3 +53,4 @@ function getMovies(moviesData){
 		console.log(error);
 	})
 };
+
