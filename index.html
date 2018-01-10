@@ -12,18 +12,32 @@
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
   <!-- favicon -->
-  <link href="assets/img/favicon.ico" rel="icon">
+  <!-- <link href="assets/img/favicon.ico" rel="icon"> -->
 </head>
 <body>
   <header>
     Holaaaa
   </header>
+  <section class="buscador">
+    <form id="searchForm">
+      <input type="text" class="form-control" id="searchText" placeholder="Buscar película">
+    </form>
+    <div class="container">
+      <div id="movies">
+        
+      </div>
+    </div>
+  </section>
+  <section class="movies">
+    <div id="showMovies"></div>
+  </section>
 
 
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script type="text/javascript" src="assets/js/data.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
