@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Cine a la carta</title>
+	<!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Fonts from google-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800" rel="stylesheet"> 
+		<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
+  <!-- favicon -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link rel="stylesheet" type="text/css" href="assets/css/styleEditProfile.css">
+</head>
+<body>
+  
+  
+    <nav>
+      <div class="row">
+          
+          
+      
+      <div id="menu-" class="nav-wrapper col s6 l6">
+          <a href="#!" class="breadcrumb">Home</a>
+          <a href="#!" class="breadcrumb">Edita tu perfil</a>
+      </div>
+      <div class="col s6 l6">
+      <img class="profilepic right" src="assets/img/default_profile_pic.jpg">
+
+      </div>
+    </nav>
+    
+  <div class="container">
+    <div class="row" >
+      <div id="left-side" class="col s12 l6">
+
+        <div class="row">
+          <div class="col s12">
+            <img class="profilepic" src="assets/img/default_profile_pic.jpg"> 
+            <form action="#" id="selectprofpic">
+              <div class="file-field input-field">
+                <div class="btn" tooltip="selecciona tu foto de perfil">
+                  <span>Archivo</span>
+                  <input id="selected-pic" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" >
+                </div>             
+              </div>
+            </form>
+          </div>
+
+        <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Apellido</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="user_name" type="text" class="validate">
+          <label for="user_name">Nombre de Usuario</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Contraseña</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Correo Electronico</label>
+        </div>
+      </div>
+      
+    </form>
+          </div>
+         </div>   
+         
+        
+      <div id="right-side" class="col s12 l6">
+        <div class="row">
+          <div class="col s8 offset-by-2">
+            <input id="datepicker" type="text" class="datepicker" placeholder="Selecciona tu fecha de nacimiento">
+          </div>
+          <div class="input-field col s12 offset-by-1">
+            <select id="select-genre">
+              <option value="0" disabled selected> Género Favorito</option>
+              <option value="1">Drama</option>
+              <option value="2">Acción</option>
+              <option value="3">Animación</option>
+              <option value="4">Comedia</option>
+              <option value="5">Ciencia Ficción</option>
+              <option value="4">Terror</option>
+              </select>
+              <label>Escoge tu género favorito</label>  
+          </div>
+          <div class="input-field col s12 offset-by-1">
+            <select id="select-act">
+              <option value="0" disabled selected> Género Favorito</option>
+              <option value="1">Drama</option>
+              <option value="2">Acción</option>
+              <option value="3">Animación</option>
+              <option value="4">Comedia</option>
+              <option value="5">Ciencia Ficción</option>
+              <option value="4">Terror</option>
+              </select>
+              <label>Escoge tu género favorito</label>  
+          </div>
+        </div>
+      </div>
+    </div> <!--cierra row de caja grande-->
+
+    
+    <div class="col s12">
+      
+      <button id="saveUser-btn" class="btn waves-effect waves-light right" type="submit" name="action">Guardar
+        <i class="material-icons right">send</i>
+      </button>
+        
+    </div>
+  </div><!--Cierra container-->    
+
+  <footer>
+  </footer>  
+
+
+    
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript"  src="assets/js/editProfile.js"></script> 
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/data.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>

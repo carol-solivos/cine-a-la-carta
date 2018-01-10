@@ -1,0 +1,37 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;	
+font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+nav{
+	height: 20vh;
+	background-color: ;
+}
+
+
+
+.profilepic{
+	height: 15vh;
+	width: 15vh;
+	border-radius:50%;
+	margin-top: 3vh;
+}
+
+
+#datepicker{
+	margin-top: 21vh;
+}
+
+#textareaUser{
+  padding: 2vh;
+}
+
+#select-genre{
+	margin-top:3vh;
+	height:5vh;
+}
