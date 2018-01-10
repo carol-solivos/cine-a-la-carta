@@ -40,7 +40,11 @@ Hasta el momento
 - Se ha logrado extraer información desde la API OMDb y mostrarla
 
 
-
+Lo que realizó cada una:
+- Javiera: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, maquetado perfil de la película,
+- Jocelyne: Aportar a la lluvia de ideas, aportar en el Golden Circle, guiar Design Sprint, flujo de usuario, sketch individual y final, maquetado Home, elaboración del Readme.md
+- Carol:  Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, recorrer y extraer información desde la API OMDb, unir commits, 
+- Enid:  Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y dibujo del sketch final, maquetado Perfil Usuario, ayudar en la elaboración del Readme
 
 
 ---
