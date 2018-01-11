@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Cine a la carta</title>
-	<!--Import Google Icon Font-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Cine a la carta</title>
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Fonts from google-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800" rel="stylesheet"> 
-		<!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- fontawesome -->
@@ -19,29 +20,52 @@
 </head>
 <body>
   
-  
+<!--NAV-->  
     <nav>
       <div class="row">
-          
-          
-      
-      <div id="menu-" class="nav-wrapper col s6 l6">
-          <a href="#!" class="breadcrumb">Home</a>
-          <a href="#!" class="breadcrumb">Edita tu perfil</a>
-      </div>
-      <div class="col s6 l6">
-      <img class="profilepic right" src="assets/img/default_profile_pic.jpg">
+        <div class="col s4 l4">
+          <div class="nav-wrapper navbar-style">
+            <a href="#!" class="brand-logo">
+            <img class="nav-logo" src="assets/img/logo.svg" alt="Cinema a la Carta Logo">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </div>
+       
+        <div class="col s4 l4"><!--Espacio para el logo (?)--> </div>
+       
+        <div class="col s4 l4">
+          <img id="pic-top" class="profilepic right" src="assets/img/default_profile_pic.jpg"> 
+        </div>
 
       </div>
     </nav>
-    
+
+ <div id="undernav" class="row">  
+        <div class="col s6 l6">
+          <div id="menu-nav" class="nav-wrapper col s6 l6">
+            <a href="#!" class="breadcrumb">Home ></a>
+            <a href="#!" class="breadcrumb">Edita tu perfil</a>
+          </div>
+        </div>
+        <div class="col s6 l6"> 
+          <a id="logout-btn" class="waves-effect waves-light btn-small right"><i class="material-icons right">exit_to_app</i>Salir</a>
+        </div>
+  </div>
+
+<!-- Sección-->   
+<section> 
   <div class="container">
+   
+
     <div class="row" >
       <div id="left-side" class="col s12 l6">
 
         <div class="row">
           <div class="col s12">
-            <img class="profilepic" src="assets/img/default_profile_pic.jpg"> 
+            <img  id="pic-preview" class="profilepic" src="assets/img/default_profile_pic.jpg"> 
             <form action="#" id="selectprofpic">
               <div class="file-field input-field">
                 <div class="btn" tooltip="selecciona tu foto de perfil">
@@ -55,39 +79,38 @@
             </form>
           </div>
 
-        <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input  id="first_name" type="text" class="validate">
-          <label for="first_name">Nombre</label>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input  id="first_name" type="text" class="validate">
+                <label for="first_name">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Apellido</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="user_name" type="text" class="validate">
+                <label for="user_name">Nombre de Usuario</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Contraseña</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Correo Electrónico</label>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Apellido</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="user_name" type="text" class="validate">
-          <label for="user_name">Nombre de Usuario</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Contraseña</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Correo Electronico</label>
-        </div>
-      </div>
-      
-    </form>
-          </div>
-         </div>   
+      </div> <!-- Cierra el Right Side-->  
          
         
       <div id="right-side" class="col s12 l6">
@@ -107,17 +130,17 @@
               </select>
               <label>Escoge tu género favorito</label>  
           </div>
-          <div class="input-field col s12 offset-by-1">
-            <select id="select-act">
-              <option value="0" disabled selected> Género Favorito</option>
-              <option value="1">Drama</option>
-              <option value="2">Acción</option>
-              <option value="3">Animación</option>
-              <option value="4">Comedia</option>
-              <option value="5">Ciencia Ficción</option>
-              <option value="4">Terror</option>
-              </select>
-              <label>Escoge tu género favorito</label>  
+          <div class="row">
+            <div class="input-field col s10 offset-by-2 right">
+              <input id="directorinput" type="text" class="validate">
+              <label for="directorInput">Agrega tu director favorito</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s10 offset-by-2 right">
+              <input id="actorsInput" type="text" class="validate">
+              <label for="actorsinput">Agrega tu Actor o Actriz favorito/a</label>
+            </div>
           </div>
         </div>
       </div>
@@ -132,9 +155,32 @@
         
     </div>
   </div><!--Cierra container-->    
-
-  <footer>
-  </footer>  
+</section> 
+ <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Contáctanos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2018 Copyright Cine a la Carta
+        <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+      </div>
+    </div>
+</footer>  
 
 
     

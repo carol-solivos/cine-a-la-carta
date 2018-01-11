@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Cine a la carta</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Fonts from google-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800" rel="stylesheet"> 
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
+  <!-- favicon -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link rel="stylesheet" type="text/css" href="assets/css/finder.css">
+    </head>
+
+    <body>
+      <!--NAV-->  
+    <nav>
+      <div class="row">
+        <div class="col s4 l4">
+          <div class="nav-wrapper navbar-style">
+            <a href="#!" class="brand-logo">
+            <img class="nav-logo" src="assets/img/logo.svg" alt="Cinema a la Carta Logo">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </div>
+       
+        <div class="col s4 l4"><!--Espacio para el logo (?)--> </div>
+       
+        <div class="col s4 l4">
+          <img id="pic-top" class="profilepic right" src="assets/img/default_profile_pic.jpg"> 
+        </div>
+
+        </div>
+      </nav>
+    <!--fin nav-->
+
+
+    <!--undernav-->
+      <div id="undernav" class="row">  
+        <div class="col s6 l6">
+          <div id="menu-nav" class="nav-wrapper col s6 l6">
+            <a href="#!" class="breadcrumb">Home </a>  <!--Loggeado?-->
+            <a href="#!" class="breadcrumb">Buscador</a>  <!-- O buscador?? -->
+          </div>
+        </div>
+        <div class="col s6 l6"> 
+          <a id="logout-btn" class="waves-effect waves-light btn-small right"><i class="material-icons right">exit_to_app</i>Salir</a>
+        </div>
+      </div>
+    <!-- fin undernav-->
+
+      <section>
+        <div class="container"> 
+          <div class="row"> 
+
+            <div id="find-left" class="col s12 l6"> 
+              <div class="row"> 
+                <div class="cols12 l12">
+                  <h3> ¿Qué quieres ver?</h3>  
+                  <p>Ayúdanos, seleccionando tus preferencias</p>
+                </div>
+                <div class="input-field col s10 l10 offset-by-1">
+                  <select id="select-genre">
+                    <option value="0" disabled selected>Género</option>
+                    <option value="1">Drama</option>
+                    <option value="2">Acción</option>
+                    <option value="3">Animación</option>
+                    <option value="4">Comedia</option>
+                    <option value="5">Ciencia Ficción</option>
+                    <option value="6">Terror</option>
+                    <option value="7">Popular</option>
+                  </select>
+                  <label>Escoge tu género favorito</label>  
+                </div>
+                <div class="input-field col s10 l10 offset-by-1">
+                    <select id="select-genre">
+                      <option value="0" disabled selected>Estado</option>
+                      <option value="1">En cartelera</option>
+                      <option value="2">Estrenos</option>
+                      <option value="2">Próximamente</option>
+                    </select>
+                    <label>¿Es un estreno? ¿Sigue aún en cartelera?</label> <!--MODIFICAR FRASE-->
+                </div>
+                <div class="input-field col s10 l10 offset-by-1">
+                    <select id="select-genre">
+                      <option value="0" disabled selected>Comuna</option>
+                      <option value="1">Santiago</option>
+                      <option value="2">La Reina</option>
+                      <option value="2">Peñalolén</option>
+                      <option value="1">Las Condes</option>
+                      <option value="2">Estación Central</option>
+                      <option value="2">Quilicura</option>
+                      <option value="2">Maipú</option>
+                      <option value="2">San Miguel</option>
+                    </select>
+                    <label>Tu ubicación más cercana o dónde quieres ir</label>
+                </div>
+
+              </div> <!--cierra row que contiene los select-->
+
+              <div class="row"> 
+                <div class="col s10 l10">
+                  <button id="find-btn" class=" btn waves-light waves-effect right">Buscar</button>
+                </div>      
+              </div>    
+
+            </div> <!--Cierra lado izquierdo -->
+          
+            <div id="find-right" class="col s12 l6"> 
+              <div class="row">
+                <
+                 <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+                
+              </div>
+              
+            </div><!--cierra el lado derecho-->
+
+          </div> <!--cierra caja grande superior--> 
+          
+
+          <!--DIV DE BENEFICIOS--> 
+          <div class="row">
+            <div class="col s12 l12">
+              <h5> Chequea los beneficios </h5>
+            </div>
+            <div class="col s12 l12">
+              <div id="carrousel" class="carousel"> <!-- buscar imagenes y textos -->
+                <a class="carousel-item" href="#one!"><img src="assets/img/poster01.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="assets/img/poster02.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="assets/img/poster03.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="assets/img/poster04.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="assets/img/poster05.jpg"></a>
+              </div>
+            </div>
+
+          </div> <!-- Cierra Beneficios-->
+
+
+        </div><!--cierra container-->
+
+      </section>
+
+     
+      
+
+
+
+    <!-- footer --> 
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contáctanos</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+               <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+              © 2018 Copyright Cine a la Carta
+              <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+          </div>
+        </div>
+      </footer> 
+    <!-- fin footer-->
+
+ <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript"  src="assets/js/finder.js"></script> 
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/data.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </body>
+  </html>

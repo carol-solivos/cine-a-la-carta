@@ -3,17 +3,22 @@ margin:0;
 padding:0;
 box-sizing:border-box;	
 font-family: 'Open Sans', sans-serif;
-
+color: #fff;
 }
 
+body{
+	background-color: #094035;
+}
+
+.container{
+	width:90%;
+}
 
 /*nav*/
 nav{
 	height: 20vh;
 	background-color: #008080;
 }
-
-
 .profilepic{
 	height: 15vh;
 	width: 15vh;
@@ -22,11 +27,9 @@ nav{
 }
 
 /*undernav*/
+
 #undernav{
 	height: 5vh;
-}
-#undernav a{
-	color:#008080;
 }
 
 #menu-nav, #logout-btn{
@@ -35,26 +38,22 @@ nav{
 #logout-btn{
 	height: 4vh;
 	width: auto;
+	color: #fff;
+}
+
+
+/*Left side*/
+
+#find-left{
+ height: 80vh;
+}
+
+/*Right side*/
+
+#find-right{
+	background-color: #fff;
+	height:80vh;
 }
 
 
 
-/*form*/
-
-#datepicker{
-	margin-top: 21vh;
-}
-
-#textareaUser{
-  padding: 2vh;
-}
-
-#select-genre{
-	margin-top:3vh;
-	height:5vh;
-}
-
-    
-#directorInput{
-	margin-top:3vh;
-}
