@@ -66,7 +66,7 @@ $(document).ready(() => {
 
       }
     });
-  }
+  } 
 
   /*
   *Firebase: Ir a el Perfil (Luego de registrarse por primera vez)
