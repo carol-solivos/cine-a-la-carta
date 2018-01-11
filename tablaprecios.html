@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Cine a la carta</title>
+	<!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
+  <!-- favicon -->
+  <link href="assets/img/favicon.ico" rel="icon">
+</head>
+<body>
+  <header>
+    <nav>
+    <div id="menu" class="nav-wrapper col s6 l6">
+          <a href="#!" class="breadcrumb">Home</a>
+          <a href="#!" class="breadcrumb">Perfil Pelicula</a>
+        </div></nav>
+
+
+    
+  </header>
+
+  <!-- SECCION TABLA COMPARATIVA PRECIOS VS HORARIOS -->
+<div class="container">
+  <div class="row">
+   <h3> Elige donde y cuando</h3>
+    <table id="tablacomparativa" class="col s12"  >
+  <tr  class="offset-s2">
+    <th onclick="sortTable(0)">PELICULA</th>
+    <th onclick="sortTable(1)">IDIOMA</th>
+    <th onclick="sortTable(0)">HORARIO</th>
+    <th onclick="sortTable(1)">PRECIO</th>
+    <th onclick="sortTable(0)">LUGAR</th>
+  </tr>
+  <tr>
+               <td>COCO (Disney) </td>
+               <td>Original</td>
+               <td>17.00 </td>
+               <td>7.900</td>
+               <td> Cine Hoyts La Reina
+                 
+               </td>
+               
+            </tr>
+
+            <tr>
+               <td>COCO (Disney) </td>
+               <td>Original</td>
+               <td>17.30 </td>
+               <td>7.350 </td>
+               <td>Costanera Center</td>
+               
+
+            </tr>
+
+            <tr>
+               <td>COCO (Disney) </td>
+               <td>Original</td>
+               <td>19.30 </td>
+               <td>6.990</td>
+               <td>Mall Parque Arauco</td>
+            </tr>
+            
+
+
+            <tr>
+               <td>COCO (Disney) </td>
+               <td>Doblado</td>
+               <td>12.30 </td>
+               <td>6.500</td>
+               <td>Mall Alameda</td>
+               
+               
+
+            </tr>
+            
+            <tr>
+               <td>COCO (Disney) </td>
+               <td>Doblado</td>
+               <td>21.10 </td>
+               <td>7.890</td>
+               <td>Mall Plaza Oeste</td>
+             
+               
+            </tr>
+
+ 
+
+
+
+</table>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/table.js"></script>
+  <script type="text/javascript" src="assets/js/data.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>

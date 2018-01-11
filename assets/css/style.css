@@ -7,6 +7,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 
+
 }
 
 .navbar-style {
@@ -119,15 +120,28 @@ div.carousel.initialized {
   margin-top: -100px;
 }
 
+#menu {
+  margin-left: 32px;
+}
+
+.card-content {
+  border: none;
+  padding-bottom: 55px;
+}
+
 .premiere-movies h4 {
   color: white;
   font-weight: 700;
   font-size: 20px;
 }
 
-#trailer 
-{
-    position:absolute;
+#contenedor {
+  margin: 0px 0px 0px;
+}
+
+#sinopsis {
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 #posteroficial{
@@ -140,3 +154,5 @@ div.carousel.initialized {
   width: auto;
   max-height: 100%;
 }
+
+
