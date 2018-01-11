@@ -8,27 +8,9 @@ $(document).ready(() => {
         dist: -50,
         padding: 100,
   });
-
-
-
-  /*$('#searchForm').on('submit', (e) => {
-		let searchText = $('#searchText').val();
-		getMovies(searchText);
-		e.preventDefault();
-	});
-	$('#btnLast').click(() => {
-		$('#showMovies').
-
-
-		http://www.omdbapi.com?i=tt2527336&apikey=d9cba372
-
-
-	});*/
-	for (var i = 0; i < lastPremier.length; i++) {
-		var moviesData = lastPremier[i];
-		getMovies(moviesData);
-	}
-
+  imgsCarrousel();
+  
+  
 
 
 });
@@ -54,3 +36,17 @@ function getMovies(moviesData){
 	})
 };
 
+function imgsCarrousel(){
+	for(var i = 0; i < 8; i++) {
+  		var imgsData = lastPremier[i];
+  		axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
+			.then(function (response) {
+			var imgPosters = response.data.Poster;
+			var imgTitle = response.data.Title;
+			i--;
+			$('#imgs' + i).append(
+			'<img src="' + imgPosters + '"><h4>' + imgTitle + '</h4>'		
+			);		
+		});  		
+ 	};
+};
