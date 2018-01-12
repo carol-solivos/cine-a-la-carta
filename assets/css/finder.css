@@ -45,15 +45,26 @@ nav{
 /*Left side*/
 
 #find-left{
- height: 80vh;
+ height: 90vh;
 }
 
 /*Right side*/
 
-#find-right{
-	background-color: #fff;
-	height:80vh;
+.card{
+	border-radius: 5px;
+} 
+
+
+/*footer*/
+
+footer a{
+	font-size: 3em;
 }
+
+.footer-copyright a{
+	font-size: 1em;
+}
+
 
 
 

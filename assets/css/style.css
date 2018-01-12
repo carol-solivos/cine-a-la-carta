@@ -83,6 +83,10 @@ body {
   text-transform: uppercase;
 }
 
+#benefit-01, #benefit-02, #benefit-03{
+  color:#3F4443;
+}
+
 #benefit-01 {
   background-image: url(../img/beneficio01.JPG);
   background-position: bottom;
@@ -90,6 +94,10 @@ body {
 
 #benefit-02 {
   background-image: url(../img/beneficio02.JPG);
+}
+
+#benefit-03{
+  background-image: url(../img/coupon-1828620_640.png)
 }
 
 .carousel.carousel-slider .carousel-item h2 {
@@ -198,3 +206,13 @@ div.carousel.initialized {
   margin-top: 5px;
 }
 
+
+/* footer */
+
+footer a{
+  font-size: 3em;
+}
+
+.footer-copyright a{
+  font-size: 1em;
+}

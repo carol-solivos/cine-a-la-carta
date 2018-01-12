@@ -58,3 +58,18 @@ nav{
 #directorInput{
 	margin-top:3vh;
 }
+
+#saveUser-btn{
+	margin-top: 5vh;
+}
+
+/*footer*/
+
+footer a{
+  font-size: 3em;
+}
+
+.footer-copyright a{
+  font-size: 1em;
+}
+  
