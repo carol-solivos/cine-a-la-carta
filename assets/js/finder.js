@@ -2,7 +2,11 @@ $(document).ready(function(){
  /*
 *Función que inicia el carrousel
 */
-$('.carousel').carousel();
+$('.carousel').carousel({
+        dist: -50,
+        padding: 100,
+        indicators: true
+  });
 
 
 /*

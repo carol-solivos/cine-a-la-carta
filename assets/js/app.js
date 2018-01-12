@@ -153,11 +153,19 @@ function filmFiltered(genre, premier, place) {
           var imgPosters = response.data.Poster;
           var imgTitle = response.data.Title;
           $('#filteredMovies').append(
-            '<div class="filteredImages" id="imgFilter">'
-            + '<img src="' + imgPosters + '" alt="">'
-            + '<h6>' + imgTitle + '</h6>'
-            + '</div>'
-            );      
+            '<div class="card small filteredImages">'
+            +'<div class="card-image">'
+            +'<img src="' + imgPosters + '">'
+            +'<span class="card-title">' + imgTitle + '</span>'
+            +'</div>'
+            +'<div class="card-content">'
+            +'<a href="perfil2.html"> Ver más... </a>'
+            +'</div>'
+            +'<div class="card-action">'
+            +'<a href="#">Comprar tickets!</a>'
+            +'</div>'
+            +'</div>'
+            ); 
         });
       } else {continue};
     };
@@ -197,12 +205,19 @@ function filteredMovies(number){
       var imgPosters1 = response.data.Poster;
       var imgTitle1 = response.data.Title;    
       $('#filteredMovies').append(
-        '<div class="filteredImages" id="imgFilter">'
-        + '<img src="' + imgPosters1 + '" alt="">'
-        + '<h6>' + imgTitle1 + '</h6>'
-        + '</div>'
-        );      
+            '<div class="card small filteredImages">'
+            +'<div class="card-image">'
+            +'<img src="' + imgPosters1 + '">'
+            +'<span class="card-title">' + imgTitle1 + '</span>'
+            +'</div>'
+            +'<div class="card-content">'
+            +'<a href="perfil2.html"> Ver más... </a>'
+            +'</div>'
+            +'<div class="card-action">'
+            +'<a href="#">Comprar tickets!</a>'
+            +'</div>'
+            +'</div>'
+          );      
     });  
   };
 };
-

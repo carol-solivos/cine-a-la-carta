@@ -14,6 +14,19 @@
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
   <!-- favicon -->
   <link href="assets/img/favicon.ico" rel="icon">
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBmXJGmBLaiCM8BSnCTBaM4ASQdRlmnIH8",
+      authDomain: "users-d258b.firebaseapp.com",
+      databaseURL: "https://users-d258b.firebaseio.com",
+      projectId: "users-d258b",
+      storageBucket: "users-d258b.appspot.com",
+      messagingSenderId: "324158465119"
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 <body>
   
@@ -53,9 +66,9 @@
     <div id="undernav" class="row">  
         <div class="col s6 l6">
           <div id="menu-nav" class="nav-wrapper col s6 l6">
-            <a href="finder.html" class="breadcrumb">Home </a>
-            <a href="#!" class="breadcrumb">Película</a>
-            <a href="#!" class="breadcrumb">Filtro</a>
+            <a href="index.html" class="breadcrumb">Inicio </a>
+            <a href="perfil2.html" class="breadcrumb">Película</a>
+            <a href="finder.html" class="breadcrumb">Filtro</a>
           </div>
         </div>
         <div class="col s6 l6"> 
@@ -79,51 +92,52 @@
     <th onclick="sortTable(1)">PRECIO</th>
     <th onclick="sortTable(0)">DIRECCION</th>
   </tr>
-            <tr>
+            <tr class="trTabla">
                <td>Hoyts La Reina</td>
                <td>Original</td>
                <td>17.00 </td>
                <td>7.900</td>
                <td>Av. Ossa #655  
-               </td>
+               </td><td><a href="https://inetvis.cinehoyts.cl/Compra/visSelectTickets.aspx?cinemacode=729&txtSessionId=47440" target='_blank'><button class=" btn waves-light waves-light waves-green right">Comprar </button></a></td>
                
             </tr>
 
-            <tr >
+            <tr class="trTabla">
                <td>Cine Planet Estacion Central </td>
                <td>Original</td>
                <td>17.30 </td>
                <td>7.350 </td>
-               <td>Av. Libertador Bernardo O'Higgins #3470</td>
+               <td>Av. Libertador Bernardo O'Higgins #3470</td><td><a href="tablaprecios.html"><button class=" btn waves-light waves-light waves-green right">Comprar </button></a></td>
                
 
             </tr>
 
-            <tr>
+            <tr class="trTabla">
                <td>Cinemark Plaza Tobalaba </td>
                <td>Original</td>
                <td>19.30 </td>
                <td>6.990</td>
-               <td>Camilo Henríquez #3690 </td>
+               <td>Camilo Henríquez #3690 </td><td><a href="tablaprecios.html"><button class=" btn waves-light waves-light waves-green right">Comprar </button></a></td>
             </tr>
             
 
 
-            <tr>
+            <tr class="trTabla">
                <td>Movieland Portal La Dehesa</td>
                <td>Doblado</td>
                <td>12.30 </td>
                <td>6.500</td>
-               <td>Av. La Dehesa #1445</td> 
+               <td>Av. La Dehesa #1445</td>
+               <td><a href="tablaprecios.html"><button class=" btn waves-light waves-light waves-green right">Comprar </button></a></td>
 
             </tr>
             
-            <tr>
+            <tr class="trTabla">
                <td>Cine Pavilion San Miguel </td>
                <td>Doblado</td>
                <td>21.10 </td>
                <td>7.890</td>
-               <td>Gran Avenida Jose Miguel Carrera #6150 </td>
+               <td>Gran Avenida Jose Miguel Carrera #6150 </td><td><a href="tablaprecios.html"><button class=" btn waves-light waves-light waves-green right">Comprar </button></a></td>
              
                
             </tr>

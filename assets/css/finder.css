@@ -44,9 +44,6 @@ nav{
 
 /*Left side*/
 
-#find-left{
- height: 90vh;
-}
 
 /*Right side*/
 
@@ -66,5 +63,22 @@ footer a{
 }
 
 
+.filteredImages {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	margin: 5px;
+}
 
+.filteredImages img{
+	width: 100%;
+}
 
+.filteredImages span{
+	
+}
+
+.filteredImages:hover {
+	cursor: pointer;
+}
