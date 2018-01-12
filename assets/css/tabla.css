@@ -37,24 +37,13 @@ body {
 }
 
 #bg-01 {
-  background-image: url(../img/cinema.png);
+  background-image: url(../img/img01.jpg);
 }
 
 #bg-02 {
-  background-image: url(../img/claqueta.jpg);
-  background-position: top;
-
+  background-image: url(../img/img02.jpg);
+  background-position: center;
 }
-
-#bg-03 {
-  background-image: url(../img/Cinema_smartphone.jpeg);
-}
-
-
-#bg-04 {
-  background-image: url(../img/movie-poster-light-box-display-frame-cinema-lightbox-light-up-home.jpg);
-}
-
 
 .btn-light {
   margin-top: 30px;
@@ -131,36 +120,33 @@ div.carousel.initialized {
   margin-top: -100px;
 }
 
-/*Configuramos perfil peliculas*/
-
 #menu {
   margin-left: 32px;
 }
 
-#resumenpelicula{
-  font-size: 20px;
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.card.large {
-  height: 100% !important;
-  vertical-align: bottom;
+.card-content {
+  border: none;
+  padding-bottom: 55px;
 }
 
 .premiere-movies h4 {
   color: white;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
 
+#contenedor {
+  margin: 0px 0px 0px;
+}
+
+#sinopsis {
+  font-weight: 800;
+  text-decoration: underline;
+}
 
 #trailer {
   position:absolute;
-  height: 100%;
-  width: auto;
 }
-
 
 #posteroficial{
   float: left;
