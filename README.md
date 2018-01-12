@@ -38,7 +38,7 @@ Encuesta:
 
 - Nuestros principales hallazgos fueron en torno a la necesidad de reducir el tiempo en el proceso de compra así como en la cantidad de etapas de éste.
 
-División del trabajo: 
+División del trabajo:
 Dividimos el trabajo de acuerdo a nuestras fortalezas:
 
 Lo que realizó cada una:
