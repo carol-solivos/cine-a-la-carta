@@ -10,7 +10,15 @@ $(document).ready(() => {
         padding: 100,
   });
 
+  //codigos para filtrar
   imgsCarrousel();
+  filteredMovies(9);
+  $('#filtrarFilms').click(function (){
+    var genre = $('#select-genre option:selected').text();
+    var premier = $('#select-premier option:selected').text();
+    var place = $('#select-place option:selected').text();
+    filmFiltered(genre, premier, place);
+  });  
   
   /*
   *Firebase: Registrar Usuario
@@ -96,14 +104,6 @@ $(document).ready(() => {
     $('#openSignUp').addClass('active');
   });
 
-
-
-  
-	for (var i = 0; i < lastPremier.length; i++) {
-		var moviesData = lastPremier[i];
-		getMovies(moviesData);
-	}
-
 });
 
 function getMovies(moviesData){
@@ -127,19 +127,67 @@ function getMovies(moviesData){
 	})
 };
 
-function imgsCarrousel(){
-	for(var i = 0; i < 8; i++) {
-  		var imgsData = lastPremier[i];
-  		axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
-			.then(function (response) {
-			var imgPosters = response.data.Poster;
-			var imgTitle = response.data.Title;
-			i--;
-			$('#imgs' + i).append(
-			'<img src="' + imgPosters + '"><h4>' + imgTitle + '</h4>'		
-			);		
-		});  		
- 	};
+// peliculas filtradas
+function filmFiltered(genre, premier, place) {
+  $('#filteredMovies').html('');
+  if (premier === 'Estrenos') {    
+    var arrayData = Object.keys(lastPremier);
+    for(var i = 0; i < arrayData.length; i++) {
+      var imgsData = Object.keys(lastPremier)[i];
+      if (lastPremier[imgsData][0].Estreno === true){
+        axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
+        .then(function (response) {
+          var imgPosters = response.data.Poster;
+          var imgTitle = response.data.Title;
+          $('#filteredMovies').append(
+            '<div class="filteredImages" id="imgFilter">'
+            + '<img src="' + imgPosters + '" alt="">'
+            + '<h6>' + imgTitle + '</h6>'
+            + '</div>'
+            );      
+        });
+      } else {continue};
+    };
+  } else if (genre === 'Drama') { 
+    filteredMovies(8)
+  } else (filteredMovies(4));
+  
 };
 
+
+// Imagenes carrusel
+function imgsCarrousel(){
+	for(var i = 0; i < 8; i++) {
+    var imgsData = Object.keys(lastPremier)[i];
+    if (lastPremier[imgsData][0].Estreno === true){
+      axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
+      .then(function (response) {
+        var imgPosters = response.data.Poster;
+        var imgTitle = response.data.Title;
+        i--;
+        $('#imgs' + i).append(
+          '<img src="' + imgPosters + '"><h4>' + imgTitle + '</h4>'   
+          );    
+      });
+    } else {continue};
+  };
+};
+
+// Peliculas filtradas
+function filteredMovies(number){ 
+  for(var i = 0; i < number; i++) {    
+    var imgsData = Object.keys(lastPremier)[i];     
+    axios.get('http://www.omdbapi.com?i=' + imgsData + '&apikey=d9cba372')
+    .then(function (response) {
+      var imgPosters1 = response.data.Poster;
+      var imgTitle1 = response.data.Title;    
+      $('#filteredMovies').append(
+        '<div class="filteredImages" id="imgFilter">'
+        + '<img src="' + imgPosters1 + '" alt="">'
+        + '<h6>' + imgTitle1 + '</h6>'
+        + '</div>'
+        );      
+    });  
+  };
+};
 

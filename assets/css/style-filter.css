@@ -1,0 +1,18 @@
+.filteredImages {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.filteredImages img{
+	width: 100%;
+}
+
+.filteredImages h6{
+	text-transform: uppercase;
+}
+
+.filteredImages:hover {
+	cursor: pointer;
+}
