@@ -150,7 +150,9 @@ function filmFiltered(genre, premier, place) {
     };
   } else if (genre === 'Drama') { 
     filteredMovies(8)
-  } else (filteredMovies(4));
+  } else if (place === 'La Reina') {
+    filteredMovies(7)
+  } else {filteredMovies(10)}
   
 };
 
