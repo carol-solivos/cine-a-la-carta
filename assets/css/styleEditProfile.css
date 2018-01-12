@@ -3,10 +3,12 @@ margin:0;
 padding:0;
 box-sizing:border-box;	
 font-family: 'Open Sans', sans-serif;
-
+color:#fff;
 }
 
-
+body{
+	background-color: #094035;
+}
 /*nav*/
 nav{
 	height: 20vh;

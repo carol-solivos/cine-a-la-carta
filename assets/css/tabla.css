@@ -2,15 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color:#fff;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #094035;
 }
-
+/*
 .navbar-style {
   background-color: teal;
-}
+}*/
 
 .premiere, footer {
   background: rgba(248,80,50,1);
@@ -25,13 +27,56 @@ body {
   padding-top: 50px;
 }
 
-.nav-logo {
+/*.nav-logo {
   height: 40px;
   width: auto;
   margin-top: 10px;
   margin-left: 30%;
+}*/
+
+/*nav*/
+nav{
+  height: 20vh;
+  background-color: #008080;
+}
+.profilepic{
+  height: 15vh;
+  width: 15vh;
+  border-radius:50%;
+  margin-top: 2vh;
 }
 
+/*undernav*/
+
+#undernav{
+  height: 5vh;
+}
+
+#menu-nav, #logout-btn{
+  margin-top:1vh;
+}
+#logout-btn{
+  height: 4vh;
+  width: auto;
+  color: #fff;
+}
+
+
+
+
+/*footer*/
+
+footer a{
+  font-size: 3em;
+}
+
+.footer-copyright a{
+  font-size: 1em;
+}
+
+
+
+/*
 .btn-style {
   font-weight: 700;
 }
@@ -165,7 +210,7 @@ div.carousel.initialized {
 
 .tabs .tab a {
   color: teal;
-}
+} */
 
 .tabs .tab a:hover, .tabs .tab a.active {
   color: white;

@@ -9,21 +9,60 @@
 		<!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tabla.css">
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
   <!-- favicon -->
   <link href="assets/img/favicon.ico" rel="icon">
 </head>
 <body>
-  <header>
-    <nav>
+  
+
+  <!--  <nav>
     <div id="menu" class="nav-wrapper col s6 l6">
           <a href="#!" class="breadcrumb">Home</a>
           <a href="#!" class="breadcrumb">Pelicula </a>
           <a href="#!" class="breadcrumb">Filtro</a>
-        </div></nav>
+        </div></nav> -->
+        <!--NAV-->  
+    <nav>
+      <div class="row">
+        <div class="col s4 l4">
+          <div class="nav-wrapper navbar-style">
+            <a href="#!" class="brand-logo">
+              <img class="nav-logo hide-on-small-only" src="assets/img/logo.png" alt="Cinema a la Carta Logo">
+              <img class="nav-logo-small hide-on-med-and-up" src="assets/img/small-logo.png" alt="Cinema a la Carta Logo">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </div>
+       
+             
+        <div id="pic-top" class="col s4 l4">
+          
+        </div>
+        <div class="col s4 l4">
+          <img id="pic-top" class="profilepic right" src="assets/img/default_profile_pic.jpg"> 
+        </div>
+
+      </div>
+    </nav>
     
-  </header>
+    <div id="undernav" class="row">  
+        <div class="col s6 l6">
+          <div id="menu-nav" class="nav-wrapper col s6 l6">
+            <a href="finder.html" class="breadcrumb">Home </a>
+            <a href="#!" class="breadcrumb">Película</a>
+            <a href="#!" class="breadcrumb">Filtro</a>
+          </div>
+        </div>
+        <div class="col s6 l6"> 
+          <a id="logout-btn" class="waves-effect waves-light btn-small right"><i class="material-icons right">exit_to_app</i>Salir</a>
+        </div>
+    </div>
+  
 
   <!-- SECCION TABLA COMPARATIVA PRECIOS VS HORARIOS -->
 <div class="container">
@@ -32,15 +71,15 @@
    <h3> Elige donde y cuando ver ...</h3>
    <h6> Presiona el campo que deseas filtrar</h6>
 
-    <table id="tablacomparativa" class="striped bordered col s12"  >
-  <tr  class="offset-s2">
+    <table id="tablacomparativa" class="bordered col s12"  >
+  <tr  class="offset-s2 ">
     <th onclick="sortTable(0)">CINE</th>
     <th onclick="sortTable(1)">IDIOMA</th>
     <th onclick="sortTable(0)">HORARIO</th>
     <th onclick="sortTable(1)">PRECIO</th>
     <th onclick="sortTable(0)">DIRECCION</th>
   </tr>
-  <tr>
+            <tr>
                <td>Hoyts La Reina</td>
                <td>Original</td>
                <td>17.00 </td>
@@ -50,7 +89,7 @@
                
             </tr>
 
-            <tr>
+            <tr >
                <td>Cine Planet Estacion Central </td>
                <td>Original</td>
                <td>17.30 </td>
@@ -98,9 +137,60 @@
 
 
 
-    </div>
-</div>
+    </div> <!--Cierra el row-->
 
+
+
+</div><!--cierra el container-->
+
+
+ <!-- footer --> 
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row ">
+            <div class="col l4 s12 center">
+              <h5 class="white-text">Cine a la Carta</h5>
+              <p class="grey-text text-lighten-4">Proyecto desarrollado por Javiera García, Jocelyne González, Carol Sepúlveda y Enid Veneros.</p>
+            </div>  <!-- cierra el izquierdo-->
+        
+            <div class="col l4   s12">
+              <div class="row">
+                <div class="col s12 l12 center">
+                  <h5 class="white-text">Encuéntranos</h5>
+                </div>
+              </div><!--cierra el row-->
+              <div class="row center">   
+                <div class="col s4 l4"> 
+                  <a class="grey-text text-lighten-3" href="https://www.facebook.com/Cine-a-la-Carta-828539707341347"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="col s4 l4">
+                  <a class="grey-text text-lighten-3" href="http://www.instagram.com/cinealacartacl"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col s4 l4">
+                  <a class="grey-text text-lighten-3" href="https://twitter.com/cinealacartacl"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+               
+              </div><!--cierra el row-->
+            </div><!-- cierra el centro-->
+
+            <div class="col l4 s12 center">
+              <h5>Contáctanos</h5>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@cinealacarta.cl</p>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> +56951234567</p> 
+
+              
+            </div><!--cierra el derecho-->
+          </div><!--cierra el row-->
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+              © 2018 Copyright Cine a la Carta
+              <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
+          </div>
+        </div>
+      </footer> 
+    <!-- fin footer-->
 
 
 
