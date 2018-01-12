@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
-  <!-- favicon -->
-  <link href="assets/img/favicon.ico" rel="icon">
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="assets/css/styleEditProfile.css">
 </head>
 <body>
@@ -26,7 +27,8 @@
         <div class="col s4 l4">
           <div class="nav-wrapper navbar-style">
             <a href="#!" class="brand-logo">
-            <img class="nav-logo" src="assets/img/logo.svg" alt="Cinema a la Carta Logo">
+              <img class="nav-logo hide-on-small-only" src="assets/img/logo.png" alt="Cinema a la Carta Logo">
+              <img class="nav-logo-small hide-on-med-and-up" src="assets/img/small-logo.png" alt="Cinema a la Carta Logo">
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
               <i class="material-icons">menu</i>
@@ -34,10 +36,9 @@
           </div>
         </div>
        
-        <div class="col s4 l4"><!--Espacio para el logo (?)--> </div>
-       
-        <div class="col s4 l4">
-          <img id="pic-top" class="profilepic right" src="assets/img/default_profile_pic.jpg"> 
+             
+        <div id="pic-top" class="col s4 l4">
+          
         </div>
 
       </div>
@@ -104,7 +105,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
+                <input id="mail" type="email" class="validate">
                 <label for="email">Correo Electrónico</label>
               </div>
             </div>

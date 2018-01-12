@@ -13,9 +13,23 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
-  <!-- favicon -->
-  <link href="assets/img/favicon.ico" rel="icon">
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="assets/css/finder.css">
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBmXJGmBLaiCM8BSnCTBaM4ASQdRlmnIH8",
+      authDomain: "users-d258b.firebaseapp.com",
+      databaseURL: "https://users-d258b.firebaseio.com",
+      projectId: "users-d258b",
+      storageBucket: "users-d258b.appspot.com",
+      messagingSenderId: "324158465119"
+    };
+    firebase.initializeApp(config);
+  </script>
     </head>
 
     <body>
@@ -25,7 +39,8 @@
         <div class="col s4 l4">
           <div class="nav-wrapper navbar-style">
             <a href="#!" class="brand-logo">
-            <img class="nav-logo" src="assets/img/logo.svg" alt="Cinema a la Carta Logo">
+              <img class="nav-logo hide-on-small-only" src="assets/img/logo.png" alt="Cinema a la Carta Logo">
+              <img class="nav-logo-small hide-on-med-and-up" src="assets/img/small-logo.png" alt="Cinema a la Carta Logo">
             </a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
               <i class="material-icons">menu</i>
@@ -309,6 +324,7 @@
 
  <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script type="text/javascript"  src="assets/js/finder.js"></script> 
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script type="text/javascript" src="assets/js/data.js"></script>

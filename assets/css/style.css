@@ -26,11 +26,19 @@ body {
 }
 
 .nav-logo {
-  height: 40px;
+  height: 63px;
   width: auto;
-  margin-top: 10px;
   margin-left: 30%;
+  margin-top: 1px;
 }
+
+.nav-logo-small {
+  height: 50px;
+  width: auto;
+  margin-left: 30%;
+  margin-top: 1px;
+}
+
 
 .btn-style {
   font-weight: 700;
@@ -181,31 +189,11 @@ div.carousel.initialized {
   max-height: 100%;
 }
 
-.tabs-style {
+.modal-title {
   font-weight: 700;
-}
-
-.tabs .tab a {
   color: teal;
+  text-transform: uppercase;
 }
-
-.tabs .tab a:hover, .tabs .tab a.active {
-  color: white;
-  background: rgba(248,80,50,1);
-  background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(9,61,50,1) 0%, rgba(0,128,128,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(9,61,50,1)), color-stop(100%, rgba(0,128,128,1)));
-  background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(9,61,50,1) 0%, rgba(0,128,128,1) 100%);
-  background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(9,61,50,1) 0%, rgba(0,128,128,1) 100%);
-  background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(9,61,50,1) 0%, rgba(0,128,128,1) 100%);
-  background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(9,61,50,1) 0%, rgba(0,128,128,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#008080', GradientType=0 );
-}
-
-#test-swipe-2 input, #test-swipe-1 input {
-  height: 15px;
-  margin-top: 5px;
-}
-
 
 /* footer */
 
@@ -216,3 +204,4 @@ footer a{
 .footer-copyright a{
   font-size: 1em;
 }
+

@@ -1,4 +1,8 @@
 $(document).ready(() =>{
+/*$('#pic-top').append(
+  '<img class="responsive-img profilepic right" src="' +
+  + photoURL + '.jpg">');*/
+
 
 
 /*
@@ -18,7 +22,8 @@ $('.datepicker').pickadate({
 */
 
 $('select').material_select();
-})
+
+});
 
 
 
@@ -29,17 +34,18 @@ $('select').material_select();
 /*
 *Variables de apoyo, para crear función que ponga la información obtenida desde el formulario a un array.
 */
-var profilePicture = $('#selected-pic').value();
-var userName = $('#textareaUser').value();
-var firstName = $('#first_name').value();
-var lastName = $('#last_name').value();
-var userName = $('#user_name').value();
-var password = $('#password').value();
-var email = $('#email').value();
-var favGenre =$('#select-genre').value();
+var profilePicture = $('#selected-pic').val();
+var userName = $('#textareaUser').val();
+var firstName = $('#first_name').val();
+var lastName = $('#last_name').val();
+var userName = $('#user_name').val();
+var password = $('#password').val();
+var mail = $('#mail').val();
+var favGenre =$('#select-genre').val();
 var saveUser = $('#saveUser-btn');
 
 $('saveUser').click()
 
 
 $('')
+

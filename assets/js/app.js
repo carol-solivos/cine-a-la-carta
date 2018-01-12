@@ -1,9 +1,7 @@
 $(document).ready(() => {
-	$(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
   $('.modal').modal();
   $('.tooltipped').tooltip({delay: 30});
-  $('ul.tabs').tabs('select_tab', 'tab_id');
-  observer();
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   $('.carousel').carousel({
         dist: -50,
@@ -24,10 +22,10 @@ $(document).ready(() => {
   *Firebase: Registrar Usuario
   */ 
   $('#signup').click(function() {
-    var email = $('#email').val();
+    var email1 = $('#email').val();
     var pass = $('#password').val();
-    firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
-    // Handle Errors here.
+    firebase.auth().createUserWithEmailAndPassword(email1, pass).catch(function(error) {
+     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     alert('Debe ingresar un texto válido');
@@ -41,11 +39,16 @@ $(document).ready(() => {
   $('#login').click(function() {
     var email2 = $('#email2').val();
     var pass2 = $('#password2').val();
-    firebase.auth().signInWithEmailAndPassword(email2, pass2).catch(function(error) {
+    console.log('logeo hermanoh');
+    firebase.auth().signInWithEmailAndPassword(email2, pass2).then(function(e) {
+      goToFinder();
+    }).catch(function(error) {
+    //firebase.auth().signInWithEmailAndPassword(email2, pass2).then(function(){
+    //}).catch(function(error) {  
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    alert('Correo electrónico y/o Contraseña inválidos');
+    alert('Correo electrónico y/o contraseña inválidos');
     // ...
     });
   });
@@ -56,9 +59,7 @@ $(document).ready(() => {
   function observer() {
     firebase.auth().onAuthStateChanged(function(user) {
        if (user) {
-      // User is signed in.
-       console.log('logeado');
-       gotToProfile();
+       // User is signed in.
        var displayName = user.displayName;
        var email = user.email;
        var emailVerified = user.emailVerified;
@@ -66,45 +67,57 @@ $(document).ready(() => {
        var isAnonymous = user.isAnonymous;
        var uid = user.uid;
        var providerData = user.providerData;
+       console.log(user);
 
+       /*$('#pic-top').append(
+      '<img class="responsive-img circle profilepic right" src="' +
+       + photoURL + '.jpg">');*/
        // ...
        } else { 
        // User is signed out.
        // ...
-
       }
     });
-  } 
+  }
+  observer();
+
+  $('#logout-btn').click(function(e) {
+    e.preventDefault();
+    firebase.auth().signOut()
+    .then(function(){
+      goToHome();
+    })
+    .catch(function(error) {
+    })
+  });
 
   /*
   *Firebase: Ir a el Perfil (Luego de registrarse por primera vez)
   */
-  function gotToProfile() {
-    window.location = ("editProfile.html");
+  function goToProfile() {
+    window.location = "editProfile.html";
+    $('#mail').append('<label for="email">' +
+      email + '</label>');
   }
 
   /*
-  *Firebase: Ir al bsucador (Luego de iniciar sesión)
+  *Firebase: Ir a el Buscador (Luego de iniciar sesión)
   */
-  function gotToProfile() {
-    window.location = ("editProfile.html");
+  function goToFinder() {
+    window.location = "finder.html";
   }
-  
-  /*
-  *Cambiando clases de las Tabs
-  */
-  $('.login-btn').click(function() {
-    $('#openSignUp').removeClass('active');
-    $('#openLogin').addClass('active');
-    
-  });
 
-  $('.resgister-btn').click(function() {
-    $('#openLogin').removeClass('active');
-    $('#openSignUp').addClass('active');
-  });
+  /*
+  *Firebase: cerrar sesión, ir al home
+  */
+
+  function goToHome() {
+    window.location = "index.html";
+  }
 
 });
+
+
 
 function getMovies(moviesData){
 	axios.get("http://www.omdbapi.com?i=" + moviesData + '&apikey=d9cba372')

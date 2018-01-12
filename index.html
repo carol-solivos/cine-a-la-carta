@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
-  <!-- favicon -->
-    <link href="assets/img/favicon.ico" rel="icon">
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <!-- Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
   
@@ -35,14 +36,15 @@
     <nav>
       <div class="nav-wrapper navbar-style">
         <a href="#!" class="brand-logo">
-          <img class="nav-logo" src="assets/img/logo.svg" alt="Cinema a la Carta Logo">
+          <img class="nav-logo hide-on-small-only" src="assets/img/logo.png" alt="Cinema a la Carta Logo">
+          <img class="nav-logo-small hide-on-med-and-up" src="assets/img/small-logo.png" alt="Cinema a la Carta Logo">
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a class="login-btn waves-effect waves-light btn modal-trigger btn-style" href="#login-modal">Iniciar Sesión</a></li>
-          <li><a class="resgister-btn waves-effect waves-light btn modal-trigger btn-style" href="#login-modal">Registrarse</a></li>
+          <li><a class="resgister-btn waves-effect waves-light btn modal-trigger btn-style" href="#register-modal">Registrarse</a></li>
         </ul>
       </div>
     </nav>
@@ -51,13 +53,13 @@
   <div class="nav-wrapper">
     <ul class="side-nav" id="mobile-demo">
       <li><a class="waves-effect waves-light btn modal-trigger" href="#login-modal">Iniciar Sesión</a></li>
-      <li><a a class="waves-effect waves-light btn modal-trigger" href="#login-modal">Registarse</a></li>
+      <li><a a class="waves-effect waves-light btn modal-trigger" href="#register-modal">Registarse</a></li>
     </ul>
   </div>
   <section class="info">
     <div class="carousel carousel-slider center" data-indicators="true">
       <div class="carousel-fixed-item center">
-        <a class="resgister-btn waves-effect waves-light modal-trigger btn btn-style darken-text-2" href="#login-modal">Regístrate</a>
+        <a class="resgister-btn waves-effect waves-light modal-trigger btn btn-style darken-text-2" href="#register-modal">Regístrate</a>
       </div>
       <div id="bg-01" class="carousel-item" href="#one!">
         <h2 class="title">Te recomendamos una película según tus gustos</h2>
@@ -84,21 +86,22 @@
           <h2 class="title left-align">Estrenos</h2>
         </div>
         <div class="col l6 right-align">
-          <a class="resgister-btn tooltipped right-align btn waves-effect btn-style darken-text-2 waves-effect waves-light modal-trigger btn-light" data-position="top" data-delay="30" data-tooltip="Necesitas ser usuario" href="#login-modal">¡Te avisamos!</a>
+          <a class="resgister-btn tooltipped right-align btn waves-effect btn-style darken-text-2 waves-effect waves-light modal-trigger btn-light" data-position="top" data-delay="30" data-tooltip="Necesitas ser usuario" href="#register-modal">¡Te avisamos!</a>
         </div>
-        <div class="col s12 l12" id="carruselEstrenos">
-          <hr>
-          <div class="carousel premiere-movies center-align">
-            <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs0"></a>
-            <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs1"></a>
-            <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs2"></a>
-            <a class="carousel-item" href="#four!" id="imgs3"></a>
-            <a class="carousel-item" href="#five!" id="imgs4"></a>
-            <a class="carousel-item" href="#one!" id="imgs5"></a>
-            <a class="carousel-item" href="#two!" id="imgs6"></a>
-            <a class="carousel-item" href="#three!" id="imgs7"></a>
-          </div>
-        </div>
+        <!-- carrusel estrenos -->
+       <div class="col s12 l12" id="carruselEstrenos">
+         <hr>
+         <div class="carousel premiere-movies center-align">
+           <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs0"></a>
+           <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs1"></a>
+           <a class="carousel-item" href="https://www.google.cl/imghp?hl=es" id="imgs2"></a>
+           <a class="carousel-item" href="#four!" id="imgs3"></a>
+           <a class="carousel-item" href="#five!" id="imgs4"></a>
+           <a class="carousel-item" href="#one!" id="imgs5"></a>
+           <a class="carousel-item" href="#two!" id="imgs6"></a>
+           <a class="carousel-item" href="#three!" id="imgs7"></a>
+         </div>
+       </div><!-- fin carrusel -->
       </div>
     </div>
   </section>
@@ -122,7 +125,8 @@
         <div class="col l6 s12 carousel-promo">
           <div class="carousel carousel-slider center " data-indicators="true">
             <div class="carousel-fixed-item center">
-              <a class="register-btn btn waves-effect waves-light modal-trigger btn-style darken-text-2" href="#login-modal">Regístrate</a>
+              <a class="resgister-btn btn waves-effect waves-light modal-trigger btn-style darken-text-2" href="#register-modal">Regístrate</a>
+
             </div>
             <div id="benefit-01" class="carousel-item" href="#one!">
               <h2 class="title">Te recomendamos una película según tus gustos</h2>
@@ -194,98 +198,66 @@
   <!-- Modal -->
   <div id="login-modal" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <div class="row">
-        <div class="col s12 l12 center-align">
-          <ul id="tabs-swipe-demo" class="tabs tabs-style">
-            <li class="tab col s6"><a id="openLogin" href="#test-swipe-1">Iniciar Sesión</a></li>
-            <li class="tab col s6"><a id="openSignUp" href="#test-swipe-2">Registrarse</a></li>
-          </ul>
-        </div>
-      </div>
       <div id="test-swipe-1">
         <div class="row">
           <form class="col offset-s2 s8">
             <div class="row">
+              <h4 class="modal-title center-align">Iniciar Sesión</h4>
               <p class="welcome center-align">¿Qué película veremos hoy?</p>
               <div class="input-field input-login">
-               <i class="fa fa-envelope" aria-hidden="true"></i>
-               <input id="email2" type="email" class="validate">
-               <label for="icon_prefix">Correo electrónico</label>
-             </div>
-             <div class="input-field input-login">
-               <i class="fa fa-lock" aria-hidden="true"></i>
-               <input id="password2" type="password" class="validate">
-               <label for="icon_telephone">Contraseña</label>
-             </div>
-             <div class="col offset-s2 s3">
-              <hr>
-            </div>
-            <div class="col s2 fix-p">
-              <p class="center-align">o</p>
-            </div>
-            <div class="col s3">
-              <hr>
-            </div>
-          </div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input id="email2" type="email" class="validate">
+                <label for="icon_prefix">Correo electrónico</label>
+              </div>
+              <div class="input-field input-login">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input id="password2" type="password" class="validate">
+                <label for="icon_telephone">Contraseña</label>
+              </div>
+              <div class="row">
+                <div class="col s12 center-align">
+                  <a id="login" href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn modal-btn-style">¡Vamos por una película!</a>
+                </div>
+              </div>
+            </div>      
           </form>
-        </div>
-        <div class="row">
-          <div class="col offset-s3 s6">
-            <a class="waves-effect waves-light btn facebook-btn center-align" href="editProfile.html"><i class="fa fa-facebook" aria-hidden="true"></i>Inciar Sesión con Facebook</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col offset-s2 s8 center-align">
-            <a id="login" href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn modal-btn-style">¡Vamos por una película!</a>
-          </div>
-        </div>
-      </div>
-    <!-- Tab Registrarse -->
-    <div id="test-swipe-2">
-      <div class="row">
-        <form class="col offset-s2 s8">
-          <div class="row">
-           <p class="welcome center-align">Tu película en menos tiempo</p>
-           <div class="input-field input-login">
-             <i class="fa fa-user" aria-hidden="true"></i>
-             <input id="icon_prefix" type="text" class="validate">
-             <label for="icon_prefix">Nombre de usuario</label>
-           </div>
-           <div class="input-field">
-             <i class="fa fa-envelope" aria-hidden="true"></i>
-             <input id="email" type="email" class="validate">
-             <label for="icon_telephone">Correo electrónico</label>
-           </div>
-           <div class="input-field">
-             <i class="fa fa-lock" aria-hidden="true"></i>
-             <input id="password" type="password" class="validate">
-             <label for="icon_telephone">Contraseña</label>
-           </div>
-           <div class="col offset-s2 s3">
-            <hr>
-          </div>
-          <div class="col s2 fix-p">
-            <p class="center-align">o</p>
-          </div>
-          <div class="col s3">
-            <hr>
-          </div>
-          </div>
-        </form>
-      </div>
-      <div class="row">
-        <div class="col offset-s3 s6">
-          <a class="waves-effect waves-light btn facebook-btn center-align" href="editProfile.html"><i class="fa fa-facebook" aria-hidden="true"></i>Registrarse con Facebook</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col offset-s2 s8 center-align">
-          <a id="signup" href="#" class="modal-action modal-close waves-effect waves-green btn-flat modal-btn-style">Registrarse</a>
         </div>
       </div>
     </div>
   </div>
+    <!-- Modal Registrarse -->
+    <div id="register-modal" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div id="test-swipe-2">
+          <div class="row">
+            <form class="col offset-s2 s8">
+              <div class="row">
+                <h4 class="modal-title center-align">Regístrate</h4>
+                <p class="welcome center-align">Tu película en menos tiempo</p>
+                <div class="input-field">
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                 <input id="email" type="email" class="validate">
+                 <label for="icon_telephone">Correo electrónico</label>
+               </div>
+               <div class="input-field">
+                 <i class="fa fa-lock" aria-hidden="true"></i>
+                 <input id="password" type="password" class="validate">
+                 <label for="icon_telephone">Contraseña</label>
+               </div>
+             </div>
+             <div class="row">
+              <div class="col offset-s2 s8 center-align">
+                <a id="signup" href="#" class="modal-action modal-close waves-effect waves-green btn-flat modal-btn-style">Registrarse</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
+
 
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
