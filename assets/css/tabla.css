@@ -77,6 +77,27 @@ footer a{
 
 
 /*
+*
+* PERFIL DOS HTML
+*
+*/
+
+#contenedor{
+  color:#fff;
+  background-color: #094035; 
+}
+
+.card-reveal{
+  color:#fff;
+  background-color: #094035; 
+}
+
+#img-perfil-peli{
+  margin-top: 4vh;
+}
+
+
+/*
 .btn-style {
   font-weight: 700;
 }
@@ -84,8 +105,9 @@ footer a{
 #bg-01 {
   background-image: url(../img/img01.jpg);
 }
-
-#bg-02 {
+.cardreveal{
+  back
+}g-02 {
   background-image: url(../img/img02.jpg);
   background-position: center;
 }
