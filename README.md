@@ -1,6 +1,6 @@
 # Cine a la carta
 
-Proyecto enfocado en agilizar y reducir el tiempo para encontrar un lugar donde ver una película, a la vez que según los gustos del usuario se le vayan recomendando nuevas películas para ver.
+Proyecto enfocado en agilizar y reducir el tiempo para encontrar un lugar donde ver una película, a la vez de comparar diferentes parámetros entre cines.
 
 ### Proceso:
 Presentación:
@@ -45,8 +45,14 @@ Lo que realizó cada una:
 - Javiera: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, maquetado perfil de la película, maquetado de tabla comparativa, edición de imágenes del Home y complementar contenido escrito de diversas áreas de la web.
 - Jocelyne: Aportar a la lluvia de ideas, aportar en el Golden Circle, guiar Design Sprint, flujo de usuario, sketch individual y final, maquetado Home, elaboración del Readme.md, elaboración logo, realización de encuesta e integración de Firebase.
 - Carol: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, recorrer y extraer información desde la API OMDb generando las funciones correspondientes en el archivo .js, creación de una data adicional con información de cines y unir commits. 
-- Enid: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y dibujo del sketch final, maquetado Perfil Usuario, maquetado de buscador, unificación de estilo css, realización de encuesta, ayudar en la elaboración del Readme, edición de imágenes del home (beneficios) y complementar contenido escrito de diversas áreas de la web.
+- Enid: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y dibujo del sketch final, maquetado Perfil Usuario, maquetado de buscador, unificación de estilo css, realización de encuesta, ayudar en la elaboración del Readme, elaboración de perfiles del proyecto en redes sociales, edición de imágenes del home (beneficios) y complementar contenido escrito de diversas áreas de la web.
 
+### Ideas pensadas para una Segunda Versión
+- Iniciar sesión con Facebook
+- Implementar la edición del perfil de usuario.
+- Según los gustos del usuario se le van recomendando nuevas películas para ver que estén en cartelera.
+- Incluir público de 12 años en adelante, estableciendo filtros pertinentes para las películas recomendadas a su edad.
+- Establecer un nexo con los principales Cines (cadenas), para que éstos nos permitan el acceso a su database.
 
 ---
 Proyecto realizado por: Javiera García, Jocelyne González, Carol Sepúlveda y Enid Veneros - 2018
