@@ -33,18 +33,19 @@ To Do:
 - Establecimos las tareas a realizar
 ![To Do](https://i.imgur.com/o2y8uA4.jpg)
 
-División del trabajo: 
-Nos dividimos el trabajo de acuerdo a nuestras fortalezas:
-Hasta el momento
-- Se continua el trabajo en el maquetado
-- Se ha logrado extraer información desde la API OMDb y mostrarla
+Encuesta:
+- Se realizó una encuesta, en la cual abordamos en la vía pública a cerca de 15 posibles usuarios a los cuales se les realizaron un total de 4 preguntas, para extraer su experiencia en la compra de boletos para asistir a una función de cine, tanto de manera física como online.
 
+- Nuestros principales hallazgos fueron en torno a la necesidad de reducir el tiempo en el proceso de compra así como en la cantidad de etapas de éste.
+
+División del trabajo: 
+Dividimos el trabajo de acuerdo a nuestras fortalezas:
 
 Lo que realizó cada una:
-- Javiera: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, maquetado perfil de la película,
-- Jocelyne: Aportar a la lluvia de ideas, aportar en el Golden Circle, guiar Design Sprint, flujo de usuario, sketch individual y final, maquetado Home, elaboración del Readme.md
-- Carol:  Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, recorrer y extraer información desde la API OMDb, unir commits, 
-- Enid:  Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y dibujo del sketch final, maquetado Perfil Usuario, ayudar en la elaboración del Readme
+- Javiera: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, maquetado perfil de la película, maquetado de tabla comparativa, edición de imágenes del Home y complementar contenido escrito de diversas áreas de la web.
+- Jocelyne: Aportar a la lluvia de ideas, aportar en el Golden Circle, guiar Design Sprint, flujo de usuario, sketch individual y final, maquetado Home, elaboración del Readme.md, elaboración logo, realización de encuesta e integración de Firebase.
+- Carol: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y final, recorrer y extraer información desde la API OMDb generando las funciones correspondientes en el archivo .js, creación de una data adicional con información de cines y unir commits. 
+- Enid: Aportar a la lluvia de ideas, aportar en el Golden Circle, Design Sprint: flujo de usuario, sketch individual y dibujo del sketch final, maquetado Perfil Usuario, maquetado de buscador, unificación de estilo css, realización de encuesta, ayudar en la elaboración del Readme, edición de imágenes del home (beneficios) y complementar contenido escrito de diversas áreas de la web.
 
 
 ---
