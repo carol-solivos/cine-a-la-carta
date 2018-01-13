@@ -120,7 +120,7 @@ $(document).ready(() => {
 
 
 function getMovies(moviesData){
-	axios.get("http://www.omdbapi.com?i=" + moviesData + '&apikey=d9cba372')
+	axios.get("https://www.omdbapi.com?i=" + moviesData + '&apikey=d9cba372')
 	/*$('#showMovies').append()*/
 	.then(function (response) {
 		var imgPosters = response.data.Poster;
@@ -148,7 +148,7 @@ function filmFiltered(genre, premier, place) {
     for(var i = 0; i < arrayData.length; i++) {
       var imgsData = Object.keys(lastPremier)[i];
       if (lastPremier[imgsData][0].Estreno === true){
-        axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
+        axios.get("https://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
         .then(function (response) {
           var imgPosters = response.data.Poster;
           var imgTitle = response.data.Title;
@@ -183,7 +183,7 @@ function imgsCarrousel(){
 	for(var i = 0; i < 8; i++) {
     var imgsData = Object.keys(lastPremier)[i];
     if (lastPremier[imgsData][0].Estreno === true){
-      axios.get("http://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
+      axios.get("https://www.omdbapi.com?i=" + imgsData + '&apikey=d9cba372')
       .then(function (response) {
         var imgPosters = response.data.Poster;
         var imgTitle = response.data.Title;
@@ -200,7 +200,7 @@ function imgsCarrousel(){
 function filteredMovies(number){ 
   for(var i = 0; i < number; i++) {    
     var imgsData = Object.keys(lastPremier)[i];     
-    axios.get('http://www.omdbapi.com?i=' + imgsData + '&apikey=d9cba372')
+    axios.get('https://www.omdbapi.com?i=' + imgsData + '&apikey=d9cba372')
     .then(function (response) {
       var imgPosters1 = response.data.Poster;
       var imgTitle1 = response.data.Title;    
